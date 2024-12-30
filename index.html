@@ -10,45 +10,57 @@
 
 </head>
 <body class="bg-success">
-  <div class = "container">
+  <a href="#" onclick="changeContent('first')">test</a>
+  <a href="#" onclick="changeContent('second')">test2</a>
+  <a href="#" onclick="changeContent('third')">test3</a>
+
+
+  <div class = "container" id="content">
     <h1 class="text-center">Please RSVP Below! </h1>
 
     <div class="form-horizontal">
       <label for="firstName">Name:</label>
       <input style="margin-bottom : 5px;" type="text" class = "form-control" id="firstName" placeholder="Names(s)">
     </div>
-
+    <a href="#" onclick="changeContent('second')">Submit!</a>
   </div>
-  <div class = "container ">
+  <!-- <div class = "container ">
     <button class = "btn btn-warning btn-block " type="button">I will be attending</button>
     <button class = "btn btn-warning btn-block" type="button">I will <strong>NOT</strong> be attending</button>
     <button class = "btn btn-warning btn-block" type="button">I will be attending the evening</button>
-  </div>
+  </div> -->
 
+<!-- <h2 class="text-center">Food Options</h2>
 
-  <div class="container ">
-    <form>
-      <div class="row mb-2">
-        <h2 class="text-center">Food Options</h2>
-        <div class="col">
-          <label for="starter" class="col-sm-2 col-form-label">Starter</label>
-          <select class="form-select col-sm-8 text-dark" id="starter">
-            <option>Egg with extra egg</option>
-            <option>Minion Toast</option>
-          </select>
-        </div>
-        <br>
-        <div class="col">
-          <label for="main" class="col-sm-2 col-form-label">Main</label>
-          <select class="form-select col-sm-8" id="main">
-            <option>Main Egg</option>
-            <option>Another Egg Dish</option>
-            <option>Just Beef</option>
-          </select>
-        </div>
+<form>
+  <div class="container bg-warning">
+    <div class="row">
+      <div class="col-xs-3">
+        <label for="starter"> Starter </label>
       </div>
-    </form>
+      <div class="col-xs-9">
+        <select class="form-select" id="starter">
+          <option>Egg with extra egg</option>
+          <option>Minion Toast</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3">
+        <label for="main">Main</label>
+      </div>
+      <div class="col-xs-3">
+        <select class="form-select" id="main">
+          <option>Main Egg Dish</option>
+          <option>Another Main Egg Dish</option>
+        </select>
+      </div>
+    </div>
+
   </div>
+</form> -->
+
 
   <div class = "container">
     <h1 class="text-center">FAQ's</h1>
@@ -68,5 +80,6 @@
  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
  <!-- Include all compiled plugins (below), or include individual files as needed -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+ <script src="index.js"></script>
 </body>
 </html>
