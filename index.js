@@ -63,3 +63,38 @@ function changeContent(page){
     }
 
 }
+
+
+function chooseEmoji(emoji){
+
+    switch(emoji){
+        case 'smile':
+        displayEmoji('smile')
+        
+    }
+
+}
+
+var canvas = document.getElementById('emojiCanvas');
+var ctx = canvas.getContext("2d");
+ctx.width = 1000;
+ctx.height= 1000;
+ctx.font = "30px Arial";
+var x = 10 , y = 100;
+
+function displayEmoji(emoji){
+
+    draw();
+}
+
+function draw(){
+    ctx.beginPath();
+    ctx.arc(x, y, 20, 0, 2*Math.PI);
+    ctx.fillStyle="rgb(195, 236, 154)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle='rgb(0, 0, 0)';
+    ctx.fillText("Hello World!", x , y);
+    x += 3;
+    requestAnimationFrame(draw)
+}
+
